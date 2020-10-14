@@ -37,6 +37,10 @@
             this.toolStripMenuItem_MonitorOff = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_SystemSleep = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_SystemShutdown = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem_SystemReboot = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_UserSigningout = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             // 
             // notifyIcon1
@@ -51,12 +55,17 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem_Open,
-            this.toolStripMenuItem_Close,
+            this.toolStripSeparator1,
             this.toolStripMenuItem_MonitorOff,
             this.toolStripMenuItem_SystemSleep,
-            this.toolStripMenuItem_SystemShutdown});
+            this.toolStripMenuItem_SystemShutdown,
+            this.toolStripMenuItem_SystemReboot,
+            this.toolStripMenuItem_UserSigningout,
+            this.toolStripSeparator2,
+            this.toolStripMenuItem_Close});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(205, 164);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(205, 240);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // toolStripMenuItem_Open
             // 
@@ -87,6 +96,28 @@
             this.toolStripMenuItem_SystemShutdown.Name = "toolStripMenuItem_SystemShutdown";
             this.toolStripMenuItem_SystemShutdown.Size = new System.Drawing.Size(204, 32);
             this.toolStripMenuItem_SystemShutdown.Text = "シャットダウン";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(201, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(201, 6);
+            // 
+            // toolStripMenuItem_SystemReboot
+            // 
+            this.toolStripMenuItem_SystemReboot.Name = "toolStripMenuItem_SystemReboot";
+            this.toolStripMenuItem_SystemReboot.Size = new System.Drawing.Size(204, 32);
+            this.toolStripMenuItem_SystemReboot.Text = "再起動";
+            // 
+            // toolStripMenuItem_UserSigningout
+            // 
+            this.toolStripMenuItem_UserSigningout.Name = "toolStripMenuItem_UserSigningout";
+            this.toolStripMenuItem_UserSigningout.Size = new System.Drawing.Size(204, 32);
+            this.toolStripMenuItem_UserSigningout.Text = "サインアウト";
             this.contextMenuStrip1.ResumeLayout(false);
 
         }
@@ -100,5 +131,9 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_MonitorOff;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_SystemSleep;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_SystemShutdown;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_SystemReboot;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_UserSigningout;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
