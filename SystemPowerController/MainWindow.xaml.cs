@@ -24,5 +24,30 @@ namespace SystemPowerController
         {
             InitializeComponent();
         }
+
+        private void btn_mOff_Click(object sender, RoutedEventArgs e)
+        {
+            MainSystem.MonitorPowerOff();
+        }
+
+        private void btn_shutdown_Click(object sender, RoutedEventArgs e)
+        {
+            MainSystem.SystemShutdown();
+        }
+
+        private void btn_Reboot_Click(object sender, RoutedEventArgs e)
+        {
+            MainSystem.SystemReboot();
+        }
+
+        private void btn_Signout_Click(object sender, RoutedEventArgs e)
+        {
+            MainSystem.UserSigningOut();
+        }
+
+        private void btn_Sleep_Click(object sender, RoutedEventArgs e)
+        {
+            MainSystem.SystemSleep();
+        }
     }
 }

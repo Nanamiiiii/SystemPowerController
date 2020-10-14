@@ -42,7 +42,8 @@ namespace SystemPowerController
             SystemPower.SystemPowerControll(2);
         }
 
-        // スリープ(サスペンド) この実装で安定かは不明
+        // スリープ(サスペンド)
+        // スリープだけどう実装するかよくわからず，PowerState.Suspendにした
         public static void SystemSleep()
         {
             // 0.5s待機後にサスペンド

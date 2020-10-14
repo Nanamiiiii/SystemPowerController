@@ -33,14 +33,14 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem_Open = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Close = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem_MonitorOff = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_SystemSleep = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_SystemShutdown = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem_SystemReboot = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_UserSigningout = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem_Close = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             // 
             // notifyIcon1
@@ -73,11 +73,10 @@
             this.toolStripMenuItem_Open.Size = new System.Drawing.Size(204, 32);
             this.toolStripMenuItem_Open.Text = "開く";
             // 
-            // toolStripMenuItem_Close
+            // toolStripSeparator1
             // 
-            this.toolStripMenuItem_Close.Name = "toolStripMenuItem_Close";
-            this.toolStripMenuItem_Close.Size = new System.Drawing.Size(204, 32);
-            this.toolStripMenuItem_Close.Text = "終了";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(201, 6);
             // 
             // toolStripMenuItem_MonitorOff
             // 
@@ -97,16 +96,6 @@
             this.toolStripMenuItem_SystemShutdown.Size = new System.Drawing.Size(204, 32);
             this.toolStripMenuItem_SystemShutdown.Text = "シャットダウン";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(201, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(201, 6);
-            // 
             // toolStripMenuItem_SystemReboot
             // 
             this.toolStripMenuItem_SystemReboot.Name = "toolStripMenuItem_SystemReboot";
@@ -118,6 +107,17 @@
             this.toolStripMenuItem_UserSigningout.Name = "toolStripMenuItem_UserSigningout";
             this.toolStripMenuItem_UserSigningout.Size = new System.Drawing.Size(204, 32);
             this.toolStripMenuItem_UserSigningout.Text = "サインアウト";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(201, 6);
+            // 
+            // toolStripMenuItem_Close
+            // 
+            this.toolStripMenuItem_Close.Name = "toolStripMenuItem_Close";
+            this.toolStripMenuItem_Close.Size = new System.Drawing.Size(204, 32);
+            this.toolStripMenuItem_Close.Text = "終了";
             this.contextMenuStrip1.ResumeLayout(false);
 
         }

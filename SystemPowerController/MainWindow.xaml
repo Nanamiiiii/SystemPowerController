@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SystemPowerController"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="電源管理" Height="250" Width="800" Icon="ico.png"
+        ResizeMode="NoResize">
+    <Grid Background="#FF2F2F2F">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Height="100" Margin="20,50" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="4"/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <Button x:Name="btn_mOff" Content="MonitorOFF" Width="90" HorizontalAlignment="Center" Margin="20,0" Click="btn_mOff_Click"/>
+                <Button x:Name="btn_shutdown" Content="Shutdown" Width="90" HorizontalAlignment="Center" Margin="20,0" Click="btn_shutdown_Click"/>
+                <Button x:Name="btn_Reboot" Content="Reboot" Width="90" HorizontalAlignment="Center" Margin="20,0" Click="btn_Reboot_Click"/>
+                <Button x:Name="btn_Signout" Content="Signout" Width="90" HorizontalAlignment="Center" Margin="20,0" Click="btn_Signout_Click"/>
+                <Button x:Name="btn_Sleep" Content="Sleep" Width="90" HorizontalAlignment="Center" Margin="20,0" Click="btn_Sleep_Click"/>
+            </StackPanel>
+
+        </StackPanel>
     </Grid>
 </Window>
