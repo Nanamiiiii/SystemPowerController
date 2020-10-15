@@ -10,6 +10,9 @@ namespace SystemPowerController
 {
     public class MainSystem
     { 
+        // シャットダウン，サインアウト，リブートは3秒カウントあり
+        // モニタ電源とスリープは即
+
         // モニター電源off
         public static void MonitorPowerOff()
         {
@@ -21,25 +24,37 @@ namespace SystemPowerController
         // シャットダウン
         public static void SystemShutdown()
         {
-            // 0.5s待機後にシャットダウン
+            // TimeCountのインスタンス生成（0: シャットダウン）
+            TimeCount tc = new TimeCount(0);
+
+            // 0.5s待機後にカウント処理
             System.Threading.Thread.Sleep(500);
-            SystemPower.SystemPowerControll(0);
+            
+            tc.Run_Count();
         }
 
         // サインアウト
         public static void UserSigningOut()
         {
-            // 0.5s待機後にサインアウト
+            // TimeCountのインスタンス生成（1: サインアウト）
+            TimeCount tc = new TimeCount(1);
+
+            // 0.5s待機後にカウント処理
             System.Threading.Thread.Sleep(500);
-            SystemPower.SystemPowerControll(1);
+
+            tc.Run_Count();
         }
 
         // リブート
         public static void SystemReboot()
         {
-            // 0.5s待機後にリブート
+            // TimeCountのインスタンス生成（2: サインアウト）
+            TimeCount tc = new TimeCount(2);
+
+            // 0.5s待機後にカウント処理
             System.Threading.Thread.Sleep(500);
-            SystemPower.SystemPowerControll(2);
+            
+            tc.Run_Count();
         }
 
         // スリープ(サスペンド)

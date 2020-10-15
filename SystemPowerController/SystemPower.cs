@@ -13,7 +13,7 @@ namespace SystemPowerController
     class SystemPower
     {
         // 直接呼び出されるメソッド
-        public static void SystemPowerControll(int Flag)
+        public static void SystemPowerControl(int Flag)
         {
             switch (Flag)
             {
